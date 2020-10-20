@@ -13,19 +13,32 @@
   </head>
   <body>
     <nav class="principal-nav">
-      <a href="#" class="principal-nav__brand">
+      <a href="#page-hero" class="principal-nav__brand">
         <i class="material-icons">style</i>
         Naipes</a
       >
       <a href="#" class="js-principal-nav__toggle principal-nav__toggle" onclick="toggleNav()">
         <i class=" material-icons">menu</i>
       </a>
-      <div class="js-principal-nav__dropdown principal-nav__dropdown hidden">
+      <div class="js-principal-nav__dropdown principal-nav__dropdown">
         <a href="#" class="principal-nav__dropdown__link">About</a>
         <a href="#" class="principal-nav__dropdown__link">Cards</a>
         <a href="#" class="principal-nav__dropdown__link">Contact</a>
       </div>
     </nav>
+
+    <header id="page-hero" class="hero">
+      <section class="hero__layout">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h3 class="hero__title">Naipes</h3>
+            <p class="hero__description">Card decks never get old.<br>
+              From easy to intense, you can play the way you want!
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <script src="scripts/scripts.js"></script>
   </body>

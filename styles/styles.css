@@ -26,8 +26,6 @@ body{
   padding: 0;
 }
 
-
-
 .principal-nav{
   background-color: #20063b;
   display: grid;
@@ -37,7 +35,7 @@ body{
 
 .principal-nav__brand{
   font-family: 'Playfair Display', serif;
-  color: #FBEFF3;
+  color: #FFF;
   font-size: 1.6em;
   text-decoration: none;
   padding-left: 10px;
@@ -53,15 +51,67 @@ body{
 .principal-nav__dropdown{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
 }
 
 .principal-nav__dropdown__link {
   color: #FBEFF3;
   text-decoration: none;
-  padding: 10px;
+  margin: 10px;
+  position: relative;
 }
+
+.principal-nav__dropdown__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #cc3363;
+  bottom: 0;
+  left: 0;
+  max-width: 70px;
+  visibility: hidden;
+}
+
+.principal-nav__dropdown__link:hover::before{
+  visibility: visible;
+}
+/*temp nav hidden class*/
 .hidden{
   display: none;
+}
+
+.hero{
+  background-color: #20063b;
+}
+
+.hero__layout, .hero__container, .hero__content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.hero__layout{
+  min-height: 100vh;
+}
+
+.hero__content{
+  padding: 2em;;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__title{
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5em;
+  margin: 0.1em 0;
+  color: #FFF;
+}
+
+.hero__description{
+  color: #FBEFF3;
+  font-size: 1.3em;
 }
 
 @media screen and (min-width: 768px){
